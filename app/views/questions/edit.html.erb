@@ -1,0 +1,21 @@
+<h1>問題を編集する</h1>
+<%= form_tag update_question_path(@question.id), method: 'patch' do %>
+  問題番号
+  <%= text_field_tag :bangou, @question.bangou, class: "form-control title-field" %>
+  問題文
+  <%= text_area_tag :mondaibun, @question.mondaibun, class: "form-control content-field" %>
+  問題1
+  <%= text_area_tag :mondai1, @question.mondai1, class: "form-control content-field" %>
+  問題2
+  <%= text_area_tag :mondai2, @question.mondai2, class: "form-control content-field" %>
+  問題3
+  <%= text_area_tag :mondai3, @question.mondai3, class: "form-control content-field" %>
+  問題4
+  <%= text_area_tag :mondai4, @question.mondai4, class: "form-control content-field" %>
+  回答
+  <%= text_area_tag :kaitou, @question.kaitou, class: "form-control content-field" %>
+  ポイント
+  <%= text_area_tag :point, @question.point, class: "form-control content-field" %>
+
+  <%= submit_tag "保存", class: "btn primary-btn" %>
+<% end %>

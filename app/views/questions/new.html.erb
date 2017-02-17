@@ -1,0 +1,31 @@
+<%= form_tag questions_path do  %>
+<h2>問題投稿ページ</h2>
+
+<p>  問題番号
+  <input type="number" name="bangou">
+</p>
+
+<p>  問題文
+  <textarea name="mondaibun"></textarea>
+</p>
+<p>  問題1
+  <input type="text" name="mondai1">
+</p>
+<p>  問題2
+  <input type="text" name="mondai2">
+</p>
+<p>  問題3
+  <input type="text" name="mondai3">
+</p>
+<p>  問題4
+  <input type="text" name="mondai4">
+</p>
+<p>
+  回答
+  <input type="text" name="kaitou">
+</p>
+<p>  ポイント
+  <textarea name="point"></textarea>
+<input type="submit" value="作成", questions_path>
+</p>
+<% end %>

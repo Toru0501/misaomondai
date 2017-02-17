@@ -1,0 +1,11 @@
+<h1>問題の一覧</h1>
+<ul class="question">
+  <% @questions.each do |question| %>
+    <li>
+      <p>問題番号</p>
+      <span class="content">
+        <%= link_to question.bangou, question_path(question.id) %>
+      </span>
+    </li>
+  <% end %>
+</ul>

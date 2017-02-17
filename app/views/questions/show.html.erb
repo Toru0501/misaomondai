@@ -1,0 +1,19 @@
+<h2>問題番号</h2>
+<p><%= @question.bangou %></p>
+<h2>問題文</h2>
+<p><%= @question.mondaibun %></p>
+<h2>問題1</h2>
+<p><%= @question.mondai1 %></p>
+<h2>問題2</h2>
+<p><%= @question.mondai2 %></p>
+<h2>問題3</h2>
+<p><%= @question.mondai3 %></p>
+<h2>問題4</h2>
+<p><%= @question.mondai4 %></p>
+<h2>回答</h2>
+<p><%= @question.kaitou %></p>
+<h2>ポイント</h2>
+<p><%= @question.point %></p>
+
+<%= link_to "編集", edit_question_path(@question.id), class: "btn edit-btn" %>
+<%= link_to "削除", destroy_question_path(@question.id), method: "delete", class: "btn destroy-btn", "data-confirm" => "本当に削除しますか？" %>

@@ -47,8 +47,8 @@ class QuestionsController < ApplicationController
     redirect_to questions_path
   end
   def test
-    @questions = Question.all.sample(3)
-  end
+  @question = Question.all.sample(10)
+    end
 
 
 

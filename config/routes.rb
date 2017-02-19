@@ -9,7 +9,9 @@ Rails.application.routes.draw do
   patch '/questions/:id' => 'questions#update', as: 'update_question'
 
   delete '/questions/:id' => 'questions#destroy', as: 'destroy_question'
-  get 'questions/test/test' => 'questions#test' 
+  get 'questions/test/test' => 'questions#test'
+  get 'questions/test/mark' => 'questions#mark'
+
 
   root 'test#top'
   get 'test/n1'  => 'test#n1'

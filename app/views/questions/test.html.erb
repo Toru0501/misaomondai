@@ -1,3 +1,12 @@
-<% @quetions.each |question| do %>
-<%= question.bangou　%>
+<%= form_tag questions_test_mark_path	do %>
+
+<% @question.each do |question| %>
+  <ul><%= question.mondaibun %>
+   <li><%= radio_button_tag "question.mondai1", '1' %><%=question.mondai1%></li>
+   <li><%= radio_button_tag "question.mondai2", '2' %><%=question.mondai2%></li>
+   <li><%= radio_button_tag "question.mondai3", '3' %><%=question.mondai3%></li>
+   <li><%= radio_button_tag "question.mondai4", '4' %><%=question.mondai4%></li>
+ </ul>
+<% end %>
+<%= submit_tag "Submit"%>
 <% end %>
